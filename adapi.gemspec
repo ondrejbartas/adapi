@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
   # automatic updates through '~>' can (and already did) break something
   #
   s.add_dependency "google-ads-common", "0.7.3"
-  s.add_dependency "google-adwords-api", "0.6.2"
+  s.add_dependency "google-adwords-api", "0.6.3"
 
   s.add_dependency "activemodel", "~> 3.0"
   s.add_dependency "activesupport", "~> 3.0"

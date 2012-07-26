@@ -44,7 +44,7 @@ module Adapi
       # from ~/adwords_api.yml
       @adwords = params[:adwords_api_instance] || AdwordsApi::Api.new(Adapi::Config.read)
       @adwords.logger = LOGGER if LOGGER
-      @version = API_VERSION
+      @version = params[:api_version] || API_VERSION
       @service = @adwords.service(params[:service_name].to_sym, @version)
       @params = params
     end
